@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+    <head>
+        <!--Tab title-->
+        <title>
+            SPH - Home
+        </title>
+        <!--Link CSS style sheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body style="background-color: rgba(0, 0, 0, 0.9);">
+        <!--Page title-->
+        <div class="title" style="height: 75px; line-height: 75px;">
+            Scott P Hunerwadel
+        </div>
+        <!--Navigation links-->
+        <div class="link" style="background-color: rgb(167, 220, 20); height: 40px; line-height: 40px;">
+            <a href="homepage.html">Home</a>
+            <a href="experience.html">Experience</a>
+            <a href="education.html">Education</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <!--Main image-->
+        <div style="text-align: center;">
+            <img src="Five Flags.jpg" alt="Racing at Five Flags Speedway in Pensacola, FL" width="1000" height="650">
+        </div>
+        <!--Main paragraph-->
+        <p class="text">
+            Welcome and thanks for stopping by. Please check out the links above for more information.
+        </p>
+        <!--Feedback form STORE in SQL DB, ADD TOOL TIPS-->
+        <table style="text-align: right;" class="horCenter text">
+            <tr>
+                <td>
+                    <!--Add name field-->
+                    <label>Name:</label>
+                    <input type="text" class="inputField" id="name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--Add email field-->
+                    <label>Email:</label>
+                    <input type="email" class="inputField" id="email">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <!--Add comment/question field-->
+                    <label  style="float: left; margin-right: 0.3em;">Comment / Question:</label>
+                    <textarea class="inputField" style="margin-top: 0.1em;" maxlength="500" rows="4" id="comment"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <form onsubmit="greet(); return false"></form>
+                        <!--Create submit button-->
+                        <input type="submit" class="button">
+                    </form>
+                </td>
+            </tr>
+        </table>
+        <!--Appearence settings-->
+        <div style="text-align: center;">
+            <!--Change font size TODO WIRE THIS UP-->
+            <select class="button">
+                <!--Large text option-->
+                <option value="large">Large Text</option>
+                <!--Medium text option, defaulted selection-->
+                <option value="initial" selected>Medium Text</option>
+                <!--Large text option-->
+                <option value="small">Small text</option>
+            </select>
+        </div>
+    </body>
+</html>

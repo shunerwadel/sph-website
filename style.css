@@ -1,0 +1,51 @@
+/* Style document for Homepage */
+
+.link
+{
+    text-align: center;
+    font-weight: 600;
+    font-family: Verdana;
+}
+
+.button
+{
+    font-family: Verdana;
+    color: blue;
+}
+
+.title
+{
+    text-align: center;
+    font-family: Verdana;
+    font-size: xx-large;
+    font-weight: 600;
+    color: blanchedalmond;
+}
+
+.text
+{
+    text-align: center;
+    font-family: Verdana;
+    color: blanchedalmond;
+}
+
+.horCenter
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inputField
+{
+    width: 400px;
+    position: relative;
+}
+
+.vertCenter
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
