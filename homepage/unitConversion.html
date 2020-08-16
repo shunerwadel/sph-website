@@ -19,14 +19,9 @@
             Perform the desired unit conversions below.
         </div>
 
-        <!--Style-->
-        <style>
-            td:hover {background-color: burlywood;}
-        </style>
-
         <!--Calculator page link banner-->
         <div>
-            <table class="table">
+            <table class="table hover">
                 <tr>
                     <td>
                         <a href="index.html" class="link">Home</a>
@@ -35,11 +30,71 @@
             </table>
         </div>
 
+        <!--Add table for calc inputs and controls-->
+        <table style="margin-left: auto; margin-right: auto">
+
+            <!--Force conversion selection-->
+            <tr>
+                <td class="tableCell">
+                    <label for="force">Force:</label>
+                </td>
+
+                <!--Convert from-->
+                <td class="tableCell">
+                    <select name="forceFrom" id="forceFrom">
+                        <option value="newtons">N</option>
+                        <option value="kilogram-force">kgf</option>
+                        <option value="pound-force">lbf</option>
+                        <option value="poundal">pdl</option>
+                    </select>
+                </td>
+
+
+                <!--Convert to-->
+                <td class="tableCell">
+                    <select name="forceTo" id="forceTo">
+                        <option value="newtons">N</option>
+                        <option value="kilogram-force">kgf</option>
+                        <option value="pound-force">lbf</option>
+                        <option value="poundal">pdl</option>
+                    </select>
+                </td>
+
+                <!--Value to convert-->
+                <td class="tableCell">
+                    <input type="text">
+                </td>
+
+                <!--Value unit-->
+                <td class="tableCell">
+                    <label value="forceFrom"></label>
+                </td>
+            </tr>
+
+            <!--Force conversion values-->
+            <tr>
+                <td class="tableCell">
+                    <input type="submit" value="Convert">
+                </td>
+
+                <!--Convert -->
+                <td class="tableCell">
+                    <input type="text">
+                </td>
+                <td class="tableCell">
+                    <input type="text">
+                </td>
+                <td class="tableCell">
+                    <input type="text">
+                </td>
+            </tr>
+        </table>
+
         <p>Under construction</p>
 
         <!--Bottom banner-->
         <div>
-            <table class="table">
+            <table class="table hover">
                 <tr>
                     <td>
                        <a href="contact.html" class="link">

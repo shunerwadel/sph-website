@@ -11,9 +11,6 @@
 
         <!--Page title-->
         <title>Calcs - SPH</title>
-        
-        <!--Link to JavaScript-->
-        <script src="functions.js"></script>
     </head>
 
     <body>
@@ -31,45 +28,24 @@
             </tr>
         </table>
 
-        <!--Forms for user input-->
-        
-        <table style="margin-left : auto; margin-right : auto; text-align : right;">
-            <tr>
-                <!--Name field-->
-                <td>
-                    <label>Name:</label>
-                    <input style="width : 400px;" type="text" id="name">
-                </td>
-            </tr>
-            <tr>
-                <!--Email field-->
-                <td>
-                    <label>Email:</label>
-                    <input style="width : 400px;" type="email" id="email">
-                </td>
-            </tr>
-            <tr>
-                <!--Comment field-->
-                <td>
-                    <label style="float : left;">Comment:</label>
-                    <textarea rows="4" id="comment" maxlength="1000" style="width : 400px;"></textarea>
-                </td>
-            </tr>
-            <tr>
-                <!--Character label warning-->
-                <td>
-                    <label style="font-size : x-small;">1000 character max.</label>
-                </td>
-            </tr>
-            <tr>
-                <!--Submit button-->
-                <td>
-                    <form onsubmit="submitted(); return false">
-                        <input type="submit" style="width : 100px; margin-bottom : 15px;">
-                    </form>
-                </td>
-            </tr>
-        </table>
+        <!--Form for user feedback-->
+        <form action="mailto:scottyhunerwadel@gmail.com" target="_blank" method="GET" enctype="text/plain">
+
+            <!--Subject field and label-->
+            <label class="formLabel">Subject:</label><br>
+            <input type="text" name="subject" id="subject" class="formField"><br>
+
+            <!--Comment field and label-->
+            <label class="formLabel">Comment:</label><br>
+            <textarea name="body" maxlength="1000" rows="4" class="formField"></textarea><br>
+
+            <!--Character limit-->
+            <p>1000 characters max</p>
+
+            <!--Send and Reset buttons-->
+            <input type="submit" value="Create Email" style="margin-bottom : 15px;">
+            <input type="reset" value="Reset">
+        </form>
 
         <!--Bottom banner-->
         <table class="table hover">

@@ -58,3 +58,29 @@ label
     margin-right : 0.3em;
     text-align : right;
 }
+
+form
+{
+    text-align: center;
+}
+
+.formLabel
+{
+    padding-top: 0.5em;
+    display: inline-block;
+    width: 400px;
+    text-align: left;
+
+}
+
+.formField
+{
+    width : 400px;
+}
+
+.tableCell
+{
+    width: 200px;
+    text-align: center;
+    border: 1px solid black;
+}
