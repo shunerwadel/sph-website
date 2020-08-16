@@ -1,0 +1,60 @@
+.link
+{
+    font-weight : bold;
+    text-shadow : 0 0 1px #000000;
+}
+
+.table
+{
+    border : 2px solid black;
+    margin-left : auto;
+    margin-right : auto;
+    text-align : center;
+    background-color : bisque;
+    height : auto;
+}
+
+.header
+{
+    text-align : center;
+    font-size: xx-large;
+    background-color : cadetblue;
+    text-shadow : 0 0 4px #FFFFFF;
+}
+
+.evenSpace
+{
+    display : flex;
+    justify-content : space-between;
+    margin-left : 125;
+}
+
+.imgbox
+{
+    display: grid;
+    height: 100%;
+}
+
+.center-fit
+{
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+p
+{
+    font-size : x-small;
+    text-align : center;
+}
+
+.hover:hover
+{
+background-color: burlywood;
+}
+
+label
+{
+    margin-right : 0.3em;
+    text-align : right;
+}
