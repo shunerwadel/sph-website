@@ -8,9 +8,11 @@
         <!--Link to CSS style file-->
         <link href="styles.css" rel="stylesheet">
 
+        <!--Link to JavaScript file-->
+        <script src="forceFunctions.js"></script>
+
         <!--Page title-->
         <title>Calcs - SPH</title>
-
     </head>
 
     <body>
@@ -30,18 +32,15 @@
             </table>
         </div>
 
+        <label>Force:</label>
         <!--Add table for calc inputs and controls-->
         <table style="margin-left: auto; margin-right: auto">
 
             <!--Force conversion selection-->
             <tr>
-                <td class="tableCell">
-                    <label for="force">Force:</label>
-                </td>
-
                 <!--Convert from-->
-                <td class="tableCell">
-                    <select name="forceFrom" id="forceFrom">
+                <td class="tableCell">From:
+                    <select name="forceFromUnit" id="forceFromUnit">
                         <option value="newtons">N</option>
                         <option value="kilogram-force">kgf</option>
                         <option value="pound-force">lbf</option>
@@ -49,10 +48,14 @@
                     </select>
                 </td>
 
+                <!--Convert from value-->
+                <td class="tableCell">
+                    <input type="text" id="forceFromValue">
+                </td>
 
                 <!--Convert to-->
-                <td class="tableCell">
-                    <select name="forceTo" id="forceTo">
+                <td class="tableCell">To:
+                    <select name="forceToUnit" id="forceToUnit">
                         <option value="newtons">N</option>
                         <option value="kilogram-force">kgf</option>
                         <option value="pound-force">lbf</option>
@@ -60,37 +63,37 @@
                     </select>
                 </td>
 
-                <!--Value to convert-->
+                <!--Convert button-->
+                <Form onsubmit="convertForce(); return false;">
+                    <td class="tableCell">
+                        <input type="submit" value="Convert">
+                    </td>
+                </Form>
+
+                <!--Convert to value-->
                 <td class="tableCell">
-                    <input type="text">
+                    <input type="text" id="forceToValue">
                 </td>
 
-                <!--Value unit-->
-                <td class="tableCell">
-                    <label value="forceFrom"></label>
-                </td>
+
+
             </tr>
 
-            <!--Force conversion values-->
+            
+
+            <!--Force Conversion values-->
             <tr>
-                <td class="tableCell">
-                    <input type="submit" value="Convert">
+                <td>
+                    <!--Place Holder-->
                 </td>
 
-                <!--Convert -->
-                <td class="tableCell">
-                    <input type="text">
-                </td>
-                <td class="tableCell">
-                    <input type="text">
-                </td>
-                <td class="tableCell">
-                    <input type="text">
-                </td>
+                
+
+                
+
+                
             </tr>
         </table>
-
-        <p>Under construction</p>
 
         <!--Bottom banner-->
         <div>
