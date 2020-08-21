@@ -8,9 +8,11 @@
         <!--Link to CSS style file-->
         <link href="styles.css" rel="stylesheet">
 
+        <!--Link to plotly JS file-->
+        <script src="plotly-latest.min.js"></script>
+
         <!--Page title-->
         <title>Calcs - SPH</title>
-
     </head>
 
     <body>
@@ -35,7 +37,60 @@
             </table>
         </div>
 
-        <p>Under Construction</p>
+        <!--Plot-->
+        <div id="plot" style="width: 600px; height: 250px; margin-left: auto; margin-right: auto;">
+            <script src="plot.js"></script>
+
+        </div>
+
+        <!--Graph button-->
+        <form onsubmit="plot(); return false;">
+            <input type="submit" value="Plot">
+        </form>
+
+        <!--Data table-->
+        <table class="tableCell" style="margin-left: auto; margin-right: auto;">
+            <tr >
+                <td class="tableCell">
+                    <input type="text" name="x1" id="x1">
+                </td>
+                <td class="tableCell">
+                    <input type="text" name="y1" id="y1">
+                </td>
+            </tr>
+            <tr>
+                <td class="tableCell">
+                    <input type="text" name="x2" id="x2">
+                </td>
+                <td class="tableCell">
+                    <input type="text" name="y2" id="y2">
+                </td>
+            </tr>
+            <tr>
+                <td class="tableCell">
+                    <input type="text" name="x3" id="x3">
+                </td>
+                <td class="tableCell">
+                    <input type="text" name="y3" id="y3">
+                </td>
+            </tr>
+            <tr>
+                <td class="tableCell">
+                    <input type="text" name="x4" id="x4">
+                </td>
+                <td class="tableCell">
+                    <input type="text" name="y4" id="y4">
+                </td>
+            </tr>
+            <tr>
+                <td class="tableCell">
+                    <input type="text" name="x5" id="x5">
+                </td>
+                <td class="tableCell">
+                    <input type="text" name="y5" id="y5">
+                </td>
+            </tr>
+        </table>
 
         <!--Bottom banner-->
         <div>
