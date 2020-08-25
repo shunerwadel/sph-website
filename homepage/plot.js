@@ -18,5 +18,6 @@ function plot()
     Y4 = document.getElementById('y4').value;
     Y5 = document.getElementById('y5').value;
 
+    // Create plot
     Plotly.newPlot(PLOTTER, [{ x:[X1,X2,X3,X4,X5], y:[Y1,Y2,Y3,Y4,Y5] }], {margin: {t: 0}});
 }

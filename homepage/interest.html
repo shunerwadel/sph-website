@@ -8,6 +8,9 @@
         <!--Link to CSS style file-->
         <link href="styles.css" rel="stylesheet">
 
+        <!--Link to JS functions-->
+        <script src="interest.js"></script>
+
         <!--Page title-->
         <title>Calcs - SPH</title>
 
@@ -19,14 +22,9 @@
             Calulate loan interest using form below.
         </div>
 
-        <!--Style-->
-        <style>
-            td:hover {background-color: burlywood;}
-        </style>
-
         <!--Calculator page link banner-->
         <div>
-            <table class="table">
+            <table class="table hover">
                 <tr>
                     <td>
                         <a href="index.html" class="link">Home</a>
@@ -35,11 +33,50 @@
             </table>
         </div>
 
-        <p>Under Construction</p>
+        <!--Inputs-->
+        <table style="margin-left: auto; margin-right: auto; margin-bottom: 3em;">
+            <tr>
+                <td>Interest Rate (%): 
+                    <input type="text" name="iRate" id="iRate">
+                </td>
+                <td>Frequency:
+                    <select name="payFreq" id="payFreq">
+                        <option value="weekly">Weekly</option>
+                        <option value="monthly" selected>Monthly</option>
+                    </select>
+                </td>
+                <td>Term (years):
+                    <input type="text" name="term" id="term">
+                </td>
+                <td>Amount:
+                    <input type="text" name="amount" id="amount">
+                </td>
+            </tr>
+        </table>
+
+        <!--Button to calculate-->
+        <form onsubmit="loanInterest(); return false">
+            <input type="submit" value="Calculate">
+        </form>
+
+        <!--Outputs-->
+        <table style="margin-left: auto; margin-right: auto;  margin-top: 3em; margin-bottom: 3em;">
+            <tr>
+                <td>Payment:
+                    <input type="text" id="payment">
+                </td>
+                <td>Interest paid:
+                    <input type="text" id="interest">
+                </td>
+                <td>Total Cost:
+                    <input type="text"  id="totCost">
+                </td>
+            </tr>
+        </table>
 
         <!--Bottom banner-->
         <div>
-            <table class="table">
+            <table class="table hover">
                 <tr>
                     <td>
                        <a href="contact.html" class="link">
