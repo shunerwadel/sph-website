@@ -33,67 +33,50 @@
         </div>
 
         <label style="font-weight: bold;">Force:</label>
+        
         <!--Add table for calc inputs and controls-->
-        <table style="margin-left: auto; margin-right: auto; margin-bottom: 1em;">
+        <Form onsubmit="convertForce(); return false;">
+            <table style="margin-left: auto; margin-right: auto; margin-bottom: 1em;">
 
-            <!--Force conversion selection-->
-            <tr>
-                <!--Convert from-->
-                <td class="tableCell">From:
-                    <select name="forceFromUnit" id="forceFromUnit">
-                        <option value="newtons">N</option>
-                        <option value="kilogram-force">kgf</option>
-                        <option value="pound-force">lbf</option>
-                        <option value="poundal">pdl</option>
-                    </select>
-                </td>
+                <!--Force conversion selection-->
+                <tr>
+                    <!--Convert from-->
+                    <td class="tableCell">From:
+                        <select name="forceFromUnit" id="forceFromUnit">
+                            <option value="newtons">N</option>
+                            <option value="kilogram-force">kgf</option>
+                            <option value="pound-force">lbf</option>
+                            <option value="poundal">pdl</option>
+                        </select>
+                    </td>
 
-                <!--Convert from value-->
-                <td class="tableCell">
-                    <input type="text" id="forceFromValue">
-                </td>
+                    <!--Convert from value-->
+                    <td class="tableCell">
+                        <input type="text" id="forceFromValue">
+                    </td>
 
-                <!--Convert to-->
-                <td class="tableCell">To:
-                    <select name="forceToUnit" id="forceToUnit">
-                        <option value="newtons">N</option>
-                        <option value="kilogram-force">kgf</option>
-                        <option value="pound-force">lbf</option>
-                        <option value="poundal">pdl</option>
-                    </select>
-                </td>
+                    <!--Convert to-->
+                    <td class="tableCell">To:
+                        <select name="forceToUnit" id="forceToUnit">
+                            <option value="newtons">N</option>
+                            <option value="kilogram-force">kgf</option>
+                            <option value="pound-force">lbf</option>
+                            <option value="poundal">pdl</option>
+                        </select>
+                    </td>
 
-                <!--Convert button-->
-                <Form onsubmit="convertForce(); return false;">
+                    <!--Convert button-->
                     <td class="tableCell">
                         <input type="submit" value="Convert" style="width: 180px;">
                     </td>
-                </Form>
-
-                <!--Convert to value-->
-                <td class="tableCell">
-                    <input type="text" id="forceToValue">
-                </td>
-
-
-
-            </tr>
-
-            
-
-            <!--Force Conversion values-->
-            <tr>
-                <td>
-                    <!--Place Holder-->
-                </td>
-
-                
-
-                
-
-                
-            </tr>
-        </table>
+                    
+                    <!--Convert to value-->
+                    <td class="tableCell">
+                        <input type="text" id="forceToValue">
+                    </td>
+                </tr>
+            </table>
+        </Form>
 
         <!--Bottom banner-->
         <div>
@@ -108,6 +91,7 @@
                 </tr>
             </table>
         </div>
+        
         <p>
             Designed and created by Scott Hunerwadel
         </p>
